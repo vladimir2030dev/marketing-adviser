@@ -1,0 +1,149 @@
+/** Mobile First **/
+@media (min-width: 320px) and (max-width: 425px)
+    h1 
+        font-size: 25px !important
+        text-align: center
+        text-transform: uppercase
+    .header
+        &__logo
+            width: 60px
+            &__text
+                font-size: 16px
+
+        &__btn
+            margin-top: 25px
+            margin-bottom: 25px
+        &__call
+            margin-top: 25px
+        &__phone
+            margin-left: auto !important
+            margin-right: auto !important
+        
+    .navbar-nav
+        text-align: center
+    .start
+        height: auto
+        background-position: center center
+        &__about
+            margin: 110px 15px 10px 0px
+            background: $white-op
+            &__item
+                font-size: 14px
+                margin-top: 15px
+    .chek-list
+        &__img
+            //top: 50%
+            //margin-top: -15%
+            bottom: 0
+            margin-bottom: -10%
+            left: 50%
+            margin-left: -15%
+            width: calc( 100% / 3)
+            z-index: 0
+        &__link
+            z-index: 999
+    .service
+        &__card
+            margin: 20px
+            background-color: $red
+            padding: 50px 25px 50px 25px
+            border-radius: 10px
+            height: 400px
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25)
+            &__head
+                height: 70%
+            &__name
+                width: 60%
+            &__prev
+                width: 40%
+            &__text
+                font-size: 22px 
+            &__img
+                width: 90px
+            &__footer button
+                font-size: 18px
+                font-weight: bold
+                padding: 7px 35px
+    .iconify
+        font-size: 16px !important
+        margin-left: 5px !important
+    .addons
+        background-color: $white
+        border-radius: 15px
+        margin: 50px 0px
+        padding: 70px 25px
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+        &__block-2
+            margin-top: 70px
+            //box-shadow: 0px 0px 15px rgba(64, 64, 64, 0.25)
+        &__block
+            border: 2px solid
+            border-color: $black
+            border-radius: 15px
+            width: 100%
+            //box-shadow: 0px 0px 15px rgba(64, 64, 64, 0.25)
+            &__example
+                padding: 25px 15px
+                position: relative
+                &__title
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    margin-right: -50%
+                    transform: translate(-50%, -50%)
+                    background-color: $white
+                    padding: 2px 2px
+                    font-size: 18px
+                    font-weight: bold
+                &__file
+                    width: 100%
+                    &__text
+                        font-size: 14px
+                        color: $red
+                        margin-bottom: 0
+                    &__link
+                        padding: 6px 15px
+                        border: 3px solid
+                        border-radius: 30px
+                        border-color: $green-btn-border
+                        background-color: $green-btn
+                        color: $white
+                        font-size: 14px
+                        &__brif
+                            padding: 6px 15px
+                            border: 3px solid
+                            border-radius: 30px
+                            border-color: $blue-btn-roder
+                            background-color: $blue-btn
+                            color: $white
+                            font-size: 14px
+                            &__load
+                                padding: 6px 15px
+                                border: 3px solid
+                                border-radius: 30px
+                                border-color: $upload-btn-border
+                                background-color: $upload-btn
+                                color: $white
+                                font-size: 14px
+    .partners
+        margin-left: 0
+        margin-right: 0
+        margin-top: 20px
+        margin-bottom: 30px
+        padding-top: 0
+        padding-bottom: 0
+        &__title
+            font-size: 30px
+        &__slider
+            &__logo
+                &__img
+                    height: 100px
+    .fab
+        font-size: 20px
+        color: $black
+        transition: .35s
+        margin-right: 25px
+        &:hover
+            color: $black-hover 
+            transform: scale(1.05)    
+

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- by ManManage.ru -->
+<!-- spent 10 hours -->
+<!-- SASS -->
+<!-- Bootstrap 4.4.1 + SlickJS + FontAwesome + GoogleFont -->
+<!-- 2020 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Маркетинговый консультант | Ирина Мальцева">
+    <meta property="og:site_name" content="Персональная страница">
+    <meta property="og:url" content="https://marketing-adviser.ru/">
+    <meta property="og:description" content="Ирина Мальцева. Персональная страница">
+    <meta property="og:image" content="assets/img/property.svg">
+    <meta name="description" content="Маркетинг под ключ">
+    <meta name="Keywords" content="Маркетинговый консультант, маркетинг, аудит, smm, таргет, Мальцева Ирина">
+    <title>Мальцева Ирина - Маркетолог</title>
+    <!-- Style link -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/slick.css">
+    <script src="https://kit.fontawesome.com/efb63bf653.js"></script>
+    <!--/ Style link -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container pl-0 pr-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand d-flex align-items-center" href=""><img src="assets/img/logo-header.png"
+                        class="header__logo" alt="Малцьева Ирина" title="А вот и я!">
+                    <div class="header__logo__text ml-2">
+                        Маркетинг "под ключ" <br>
+                        Ирина Мальцева
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mob-menu"
+                    aria-controls="mob-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mob-menu">
+                    <ul class="navbar-nav mr-auto ml-auto mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex header__call">
+                        <a href="tel:+79829262775" class="ml-2 mr-3 header__phone">+7(982)926-27-75</a>
+                    </div>
+
+                    <div class="header__btn">
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class=" btn btn-dark
+                            ml-auto mr-auto d-flex align-items-center"><i class="fas fa-phone-volume mr-2"></i>Заказать
+                            звонок</button>
+                    </div>
+                    <!-- Modal call-back -->
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm modal-dialog-centered">
+                            <div class="modal-content">
+                                <form action="call-back.php" method="POST">
+                                    <div class="input-group">
+                                        <input id="phone" name="phone" type="tel" class="form-control" placeholder="+7"
+                                            aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="submit"
+                                                id="button-addon1">&#9990;</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Modal call-back -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/ Header -->
+
+    <!-- Section -->
+    <section class="section start" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 start__about">
+                    <p class="start__about__item"> <span>&#10074;</span> Более 15 лет эффективно практикую маркетинг</p>
+                    <p class="start__about__item"> <span>&#10074;</span> Диплом MBA CITY BUSINESS SCHOOL «Управление
+                        маркетингом»</p>
+                    <p class="start__about__item"> <span>&#10074;</span> Сертификат Дамир Халилов «Маркетинг в соцсетях»
+                    </p>
+                    <p class="start__about__item"> <span>&#10074;</span> Имею опыт работы регионального менеджера по
+                        продажам</p>
+                    <p class="start__about__item"><span>&#10074;</span> Тренинги по продажам в компаниях Unilever &
+                        Kraft foods</p>
+                    <p class="start__about__item"> <span>&#10074;</span> Считаю, маркетинг без продаж — абсурд и утопия
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section chek-list">
+        <div class="container-fluid">
+            <img src="assets/img/bg-check-list.png" class="chek-list__img" alt="Чек-лист" title="Образец чек-листа">
+            <div class="row">
+                <h1 class="chek-list__title ml-auto mr-auto">ОЦЕНИТЕ ВАШ МАРКЕТИНГ ПРЯМО СЕЙЧАС!</h1>
+            </div>
+            <div class="row mt-5">
+                <a href="assets/dwn/Chek-list.pdf" class="chek-list__link ml-auto mr-auto" title="Чек лист в .pdf"
+                    alt="Ссылка на чек-лист" target="_blank">Скачать
+                    бесплатно</a>
+            </div>
+            <div class="row mt-5">
+                <p class="chek-list__description ml-auto mr-auto">
+                    ЧЕК-ЛИСТ по маркетингу
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section service" id="service">
+        <div class="container">
+            <div class="row pb-50">
+                <h1 class="ml-auto mr-auto service__title">Чем я могу вам помочь?</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 pl-0 pr-0">
+                    <div class="service__card align-items-center">
+                        <div class="service__card__head d-flex align-items-center">
+                            <div class="service__card__name w-70">
+                                <p class="service__card__text">
+                                    <strong>ведение</strong> <br> АККУАНТОВ <br> И групп <br> <strong>в
+                                        соцсетях</strong>
+                                </p>
+                            </div>
+                            <div class="service__card__prev text-right w-30">
+                                <img src="assets/img/smm.svg" class="service__card__img" alt="SMM">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service__card__footer d-flex">
+                            <button type="button" class="btn btn-light ml-auto mr-auto mt-3" data-toggle="modal"
+                                data-target="#serviceSMM">Как это?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-0 pr-0">
+                    <div class="service__card align-items-center">
+                        <div class="service__card__head d-flex align-items-center">
+                            <div class="service__card__name w-70">
+                                <p class="service__card__text">
+                                    <strong>Таргетированная</strong> <br> реклама
+                                </p>
+                            </div>
+                            <div class="service__card__prev text-right w-30">
+                                <img src="assets/img/target.svg" class="service__card__img" alt="Target">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service__card__footer d-flex">
+                            <button type="button" class="btn btn-light ml-auto mr-auto mt-3" data-toggle="modal"
+                                data-target="#serviceTarget">Так, а это что?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 pl-0 pr-0">
+                    <div class="service__card align-items-center">
+                        <div class="service__card__head d-flex align-items-center">
+                            <div class="service__card__name w-70">
+                                <p class="service__card__text">
+                                    <strong>аудит</strong> <br> & консалтинг
+                                </p>
+                            </div>
+                            <div class="service__card__prev text-right w-30">
+                                <img src="assets/img/audit.svg" class="service__card__img" alt="Audit">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service__card__footer d-flex">
+                            <button type="button" class="btn btn-light ml-auto mr-auto mt-3" data-toggle="modal"
+                                data-target="#serviceAudit">Интересно</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-0 pr-0">
+                    <div class="service__card align-items-center">
+                        <div class="service__card__head d-flex align-items-center">
+                            <div class="service__card__name w-70">
+                                <p class="service__card__text">
+                                    <strong>маркетинг</strong> <br> под ключ
+                                </p>
+                            </div>
+                            <div class="service__card__prev text-right w-30">
+                                <img src="assets/img/key.svg" class="service__card__img" alt="SMM">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service__card__footer d-flex">
+                            <button type="button" class="btn btn-light ml-auto mr-auto mt-3" data-toggle="modal"
+                                data-target="#serviceMark">Так, а это что?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pl-0 pr-0">
+            <div class="addons">
+                <div class="row justify-content-center">
+                    <div class="addons__block">
+                        <div class="addons__block__example d-flex">
+                            <h2 class="addons__block__example__title d-block">
+                                Начните действовать прямо сейчас!
+                            </h2>
+                            <div
+                                class="addons__block__example__file justify-content-around align-items-center d-flex mt-2">
+                                <p class="addons__block__example__file__text mr-1">
+                                    Примерный контент-план для ваших соцсетей:
+                                </p>
+                                <a href="assets/dwn/Пример контент-плана.xlsx" target="_blank"
+                                    title="Пример контент-плана в EXCEL"
+                                    class="addons__block__example__file__link d-flex align-items-center">Скачать <span
+                                        class="ml-2 iconify" data-inline="false" data-icon="mdi:microsoft-excel"
+                                        style="color: #ffffff; font-size: 24px;"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center addons__block-2">
+                    <div class="addons__block">
+                        <div class="addons__block__example d-flex flex-wrap">
+                            <h2 class="addons__block__example__title d-block">
+                                Не знаете, что выбрать?
+                            </h2>
+                            <div
+                                class="addons__block__example__file justify-content-around align-items-center d-flex mt-2">
+                                <p class="addons__block__example__file__text mr-1 text-center">
+                                    Отправьте заполненный бриф, и я проведу для вас <br>
+                                    <strong>АУДИТ БЕСПЛАТНО</strong>
+                                </p>
+                            </div>
+                            <div
+                                class="addons__block__example__file__link-btn d-flex justify-content-around w-100 mt-5">
+                                <a href="assets/dwn/brif.docx" target="_blank" title="Бриф для заполнения"
+                                    class="addons__block__example__file__link__brif d-flex align-items-center">Скачать
+                                    <span class="iconify" data-inline="false" data-icon="mdi:microsoft-word"
+                                        style="color: #ffffff; font-size: 24px;"></span></a>
+                                <a href="" type="button" data-toggle="modal" data-target="#upload"
+                                    title="Загрузите к нам на сервер"
+                                    class="addons__block__example__file__link__brif__load d-flex align-items-center">Загрузить<span
+                                        class="iconify" data-inline="false" data-icon="entypo:upload-to-cloud"
+                                        style="color: #ffffff; font-size: 22px;"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Up-load -->
+    <div class="modal" id="upload" tabindex="-1" role="dialog" aria-labelledby="uploadLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="uploadLabel">Отправить заполненный бриф</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="upload.php" method="POST" enctype="multipart/form-data">
+                        <div class="custom-file">
+                            <input type="file" name="myfile" class="custom-file-input" id="myfile">
+                            <label class="custom-file-label" for="myfile">Выбрать...</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Service -->
+    <div class="modal" id="serviceSMM" tabindex="-1" role="dialog" aria-labelledby="serviceSMMLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:brown;" id="serviceSMMLabel">Ведение аккаунтов и групп в
+                        соцсетях
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Продвижение в социальных сетях в 2020 году</strong> — неотъемлемая часть работы для
+                        любого бизнеса.
+                    </p>
+                    <p> <strong>Главное правило удачных аккаунтов</strong> — системная работа, связанная с комплексом
+                        маркетинга компании.
+                    </p>
+                    <p> <strong>Что входит в мою работу:</strong> мониторинг конкурентов, стратегия в соцсетях,
+                        составление контент-плана, написание текстов, организация фото и видеосъемок(если это необходимо
+                        для реализации стратегии), аналитика вступлений в группы и подписчиков.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-service"
+                        data-whatever="Ведение аккаунтов и групп в соцсетях">Надо
+                        попробовать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="serviceTarget" tabindex="-1" role="dialog" aria-labelledby="serviceTargetLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:brown;" id="serviceTargetLabel">Таргетированная реклама
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>У вас красивый профиль в соцсетях, а продаж из соцсетей так и нет?</strong>
+                    </p>
+                    <p> <strong>Таргетированная реклама</strong> — это на сегодняшний день один из самых удачных и низко
+                        затратных инструментов привлечения целевой аудитории к вашему продукту.
+                        <br> Таргет = цель, если ваша цель — продавать, таргет — то, что нужно!
+                    </p>
+                    <p> <strong>Что входит в мою работу: </strong> мониторинг конкурентов, анализ аудитории, А/В
+                        тестирование, настройка таргетированной рекламы по ранее определенным KPI, контроль ставок,
+                        анализ эффективности.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-service"
+                        data-whatever="Таргетированная реклама">Хочу попробовать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="serviceAudit" tabindex="-1" role="dialog" aria-labelledby="serviceAuditLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:brown;" id="serviceAuditLabel">Аудит и консалтинг
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Вы опытный бизнесмен или начинающий стартапер, и с маркетингом — на ВЫ.</strong>
+                    </p>
+                    <p> Давайте проверим точки контакта вашей аудитории с продуктом или услугой, которые вы продаете,
+                        проанализируем «слабые места», проверим сайт и соцсети, добавим аналитики продаж, и только после
+                        проведения аудита составим медиаплан и спланируем бюджет.
+                    </p>
+                    <p> <strong>Что входит в мою работу: </strong> мониторинг конкурентов, анализ аудитории, анализ
+                        продаж, аудит сайта, аудит маркетинга, оценка маркетинговой эффективности, контроль точек
+                        контакта, аудит отзывов, рекомендаций, публикаций в СМИ, составление медиаплана исходя из
+                        плановых показателей и показателей аудита.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-service"
+                        data-whatever="Аудит и консалтинг">Давайте попробуем</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="serviceMark" tabindex="-1" role="dialog" aria-labelledby="serviceMarkLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:brown;" id="serviceMarkLabel">Маркетинг «под ключ»
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Экономическая ситуация в начале 2020 году показала, что спасение любого бизнеса в
+                            аутсорсинге, и маркетинг - не исключение. </strong> Опыт ведения компаний на аутсорсинге в
+                        течение нескольких лет показал, что малому и среднему бизнесу зачастую не нужен штатный
+                        маркетолог.
+                    </p>
+                    <p> <strong>Что входит в мою работу:</strong> мониторинг конкурентов, анализ аудитории, анализ
+                        продаж, аудит сайта, аудит маркетинга, оценка маркетинговой эффективности, контроль точек
+                        контакта, аудит отзывов, рекомендаций, публикаций в СМИ, составление медиаплана исходя из
+                        плановых показателей и показателей аудита. Реализация комплекса маркетинга и оценка
+                        эффективности на основании выполненных финансовых показателей (продажи).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-service"
+                        data-whatever="Маркетинг «под ключ»">Давно пора! Хочу!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div class="modal" id="form-service" tabindex="-1" role="dialog" aria-labelledby="form-serviceLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="form-serviceLabel">Оставить заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="service.php" method="POST">
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">Ваше имя</label>
+                            <div class="col-sm-10">
+                                <input name="person" type="text" class="form-control" placeholder="Ф.И.О." required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input name="mail" type="email" class="form-control" id="email"
+                                    placeholder="example@domain" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="tel" class="col-sm-2 col-form-label">Контактный телефон</label>
+                            <div class="col-sm-10">
+                                <input name="phone" type="tel" class="form-control" id="tel" placeholder="+7" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="recipient-name" class="col-sm-2 col-form-label">Опция:</label>
+                            <div class="col-sm-10">
+                                <input name="options" type="text" class="form-control select" id="recipient-name"
+                                    readonly required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="form-check">
+                                    <input name="check" class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Согласие с <a href="assets/dwn/policy.pdf" alt="Политика конфиденциальности"
+                                            target="_blank">политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Modal Service -->
+    <section class="section partners pt-5">
+        <div class="container-fluid position-relative">
+            <div class="row">
+                <h1 class="partners__title d-flex text-center">
+                    Мои партнеры
+                </h1>
+            </div>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+            <div class="partners__slider ">
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/toyota.svg" class="partners__slider__logo__img" alt="Тойта Тюмень Юг">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/audi.svg" class="partners__slider__logo__img" alt="Ауди центр Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/lexus.svg" class="partners__slider__logo__img" alt="Лексус центр Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/basch.svg" class="partners__slider__logo__img" alt="Башнефть">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/unil.svg" class="partners__slider__logo__img" alt="Unilever">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/kraft.svg" class="partners__slider__logo__img" alt="Kraft Group">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/bani.svg" class="partners__slider__logo__img"
+                        alt="Распутинские бани тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/1c.svg" class="partners__slider__logo__img" alt="1С тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/modul.svg" class="partners__slider__logo__img" alt="Модуль мебель Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/eng.svg" class="partners__slider__logo__img"
+                        alt="Английский дворик ресторан Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/m-ser.svg" class="partners__slider__logo__img" alt="М-сервис Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/dent.svg" class="partners__slider__logo__img" alt="Дентоград Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/bios.svg" class="partners__slider__logo__img" alt="Bioswiss">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/avrora.svg" class="partners__slider__logo__img"
+                        alt="Гостиница Аврора Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/roll.svg" class="partners__slider__logo__img" alt="Double Roll Тюмень">
+                </div>
+                <div class="partners__slider__logo">
+                    <img src="assets/img/logo/ttp.svg" class="partners__slider__logo__img" alt="Double Roll Тюмень">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section about pt-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="ml-auto mr-auto font-weight-bold ">Контакты</h1>
+            </div>
+            <div class="row mt-5 align-items-center">
+                <div class="col-lg-6 position-relative"> <img src="assets/img/about.png" style="width: 100%;"
+                        alt="Фото Ирина Мальцева" title="Мальцева Ирина - маркетинговый консультант"></div>
+                <div class="col-lg-6">
+                    <div class="about__title">
+                        <h2 class="font-weight-bold">Мальцева Ирина</h2>
+
+                    </div>
+                    <div class="about__social mt-4">
+                        <a href="https://www.facebook.com/irina.maltseva.758" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/i_maltseva85/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://vk.com/imaltceva" target="_blank"><i class="fab fa-vk"></i></a>
+                    </div>
+                    <div class="about__contact flex-wrap d-flex mt-4">
+                        <a href="tel:+79829262775" class="about__contact__phone w-100"><i
+                                class="fas fa-mobile mr-1"></i>
+                            +7(982)926-27-75</a>
+                        <a href="mailto:info@marketing-adviser.ru" class="about__contact__mail w-100 mt-4"><i
+                                class="fas fa-envelope mr-1"></i>info@marketing-adviser.ru</a>
+                    </div>
+                    <div class="about__form mt-4">
+                        <h3 class="text-center mb-3" style="font-size: 20px;">Написать мне:</h3>
+                        <form action="form.php" method="POST">
+                            <div class="form-group">
+                                <input name="man" type="text" class="about__form__input form-control" id="name"
+                                    required>
+                                <small class="form-text text-muted">Ваше имя </small>
+                            </div>
+                            <div class="form-group">
+                                <input name="mailto" type="email" class="about__form__input form-control" id="mail"
+                                    aria-describedby="emailHelp" required>
+                                <small class="form-text text-muted">Ваш контактный e-mail </small>
+                            </div>
+                            <div class="form-group">
+                                <input name="mobile" type="tel" class="about__form__input form-control" id="phone"
+                                    required>
+                                <small class="form-text text-muted">Ваш контактный телефон </small>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="comments" class="about__form__input form-control" id="comments"
+                                    rows="3"></textarea>
+                                <small class="form-text text-muted">Ваш вопрос или комментарий</small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">Согласие с <a
+                                        href="assets/dwn/policy.pdf">политикой конфиденциальности</a></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-3 mt-3 text-sm-center">© 2020 <br> Мальцева Ирина <br> Маркетинговый консультант
+                </div>
+                <div class="col-lg-6 mt-3"> <a href="assets/dwn/policy.pdf">Политика конфиденциальности</a> </div>
+                <div class="col-lg-3 mt-3">
+                    +7(982)926-27-75 <br> info@marketing-adviser.ru
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer -->
+
+    <!-- Script -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/my.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <!--/ Script -->
+</body>
+
+</html>
